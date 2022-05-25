@@ -8,6 +8,7 @@ import {
   Fab,
   FormControlLabel,
   FormGroup,
+  IconButton,
   Stack,
   Switch,
   TextField,
@@ -22,6 +23,7 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LoadingButton } from '@mui/lab';
+import { Close } from '@mui/icons-material';
 
 const columns: GridColumns = [
   { field: 'name', headerName: 'Name', width: 140 },
@@ -252,9 +254,24 @@ const Home: NextPage = () => {
           }}
           spacing={2}
         >
-          <Typography variant="h6">
-            {isEditing ? 'Update' : 'Add'} Reservation
-          </Typography>
+          <Box
+            display="flex"
+            sx={{
+              alignItems: 'center',
+            }}
+          >
+            <Typography variant="h6">
+              {isEditing ? 'Update' : 'Add'} Reservation
+            </Typography>
+            <IconButton
+              sx={{
+                ml: 'auto',
+              }}
+              onClick={closeDrawer}
+            >
+              <Close />
+            </IconButton>
+          </Box>
           <TextField
             label="Name"
             value={reservation.name}
