@@ -1,0 +1,49 @@
+{
+  "name": "nextjs-with-typescript",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@date-io/date-fns": "^2.14.0",
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@graphql-yoga/node": "^2.7.0",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/lab": "^5.0.0-alpha.83",
+    "@mui/material": "latest",
+    "@mui/x-data-grid": "^5.11.0",
+    "@mui/x-data-grid-generator": "^5.11.0",
+    "@mui/x-date-pickers": "^5.0.0-alpha.4",
+    "apollo-server-micro": "^3.8.1",
+    "cookie": "^0.5.0",
+    "cors": "^2.8.5",
+    "date-fns": "^2.28.0",
+    "exceljs": "^4.3.0",
+    "graphql": "^16.5.0",
+    "graphql-compose": "^9.0.8",
+    "graphql-compose-mongoose": "^9.7.1",
+    "graphql-request": "^4.2.0",
+    "micro": "^9.3.4",
+    "mongoose": "^6.3.4",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-query": "^3.39.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  }
+}
