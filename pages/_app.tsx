@@ -21,6 +21,7 @@ export default function MyApp(props: MyAppProps) {
     <QueryClientProvider client={queryClient}>
       <CacheProvider value={emotionCache}>
         <Head>
+          <title>Kims CRM</title>
           <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <ThemeProvider theme={theme}>
